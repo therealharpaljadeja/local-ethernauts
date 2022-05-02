@@ -12,6 +12,7 @@ contract AttackingKing {
 
     function hackContract() external {
         // Code me!
+        // transfer won't work because transfer only lets 2,300 gas ahead, which is not enough for the King receive function.
         contractAddress.call{value: 2 ether}("");
     }
 
